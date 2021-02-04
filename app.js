@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const Sequelize = require('sequelize')
 
-const db = new Sequelize('process.env.DATABASE_URL');
+// const db = new Sequelize('process.env.DATABASE_URL');
 
-db.authenticate()
-  .then(() => console.log('Connection has been established successfully.'))
-  .catch(error => console.error('Unable to connect to the database:', error))
+// db.authenticate()
+//   .then(() => console.log('Connection has been established successfully.'))
+//   .catch(error => console.error('Unable to connect to the database:', error))
 
 // Set Port
 const port = 3000;
